@@ -5,7 +5,7 @@ let db: Database;
 export async function connect() {
   const client = new MongoClient();
   // await client.connect(
-  //   "mongodb+srv://Admin:Admin@cluster0.uifnujc.mongodb.net/?retryWrites=true&w=majority"
+  //   "x"
   // );
 
   await client.connect({
@@ -13,15 +13,15 @@ export async function connect() {
     tls: true,
     servers: [
       {
-        host: "ac-rpvdvpx-shard-00-00.uifnujc.mongodb.net",
+        host: "x",
         port: 27017,
       },
       {
-        host: "ac-rpvdvpx-shard-00-01.uifnujc.mongodb.net",
+        host: "x",
         port: 27017,
       },
       {
-        host: "ac-rpvdvpx-shard-00-02.uifnujc.mongodb.net",
+        host: "x",
         port: 27017,
       },
     ],
